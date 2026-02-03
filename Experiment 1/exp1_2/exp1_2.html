@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking App</title>
+
+    <style>
+        body{
+            margin:0;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            font-family: Arial;
+        }
+
+        .box{
+            background:white;
+            padding:25px 30px;
+            border-radius:14px;
+            box-shadow:0 10px 25px rgba(0,0,0,0.25);
+            text-align:center;
+            width:280px;
+        }
+
+        input{
+            padding:8px;
+            width:100%;
+            margin:10px 0;
+        }
+
+        .buttons{
+            display:flex;
+            gap:10px;
+            justify-content:center;
+        }
+
+        button{
+            padding:8px 14px;
+            border:none;
+            border-radius:8px;
+            cursor:pointer;
+        }
+
+        .Deposit{
+            background:green;
+            color:white;
+        }
+
+        .Withdraw{
+            background:red;
+            color:white;
+        }
+
+        .error{
+            color:red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1 id="balance">Balance : $500</h1>
+
+        <label>Amount :</label>
+        <input type="text" id="amount" placeholder="Enter the amount">
+
+        <div class="buttons">
+            <button onclick="deposit()" class="Deposit">Deposit</button>
+            <button onclick="withdraw()" class="Withdraw">Withdraw</button>
+        </div>
+
+        <p class="error" id="amountError"></p>
+    </div>
+
+    <script src="exp1_2.js"></script>
+</body>
+</html>

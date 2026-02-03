@@ -1,0 +1,50 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Inter', sans-serif;
+    padding: 40px;
+    color: #1a1a1a;
+}
+
+h1 { font-size: 2.5rem; margin-bottom: 30px; }
+
+.filter-controls {
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+}
+
+select {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    width: 250px;
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 24px;
+    transition: transform 0.2s ease;
+}
+
+.card h2 { font-size: 1.4rem; margin: 0 0 10px 0; }
+.card p { font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; }
+
+.tag {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.electronics { background-color: #3b82f6; } /* Strong blue */
+.clothing { background-color: #93c5fd; }    /* Light blue */

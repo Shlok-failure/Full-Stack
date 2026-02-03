@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Drawing Tool</title>
+    <link rel="stylesheet" href="exp2_3.css">
+</head>
+<body>
+
+    <div class="app-card">
+        <div class="toolbar">
+            <div class="color-picker-wrapper">
+                <input type="color" id="colorPicker" value="#3b82f6">
+            </div>
+            <button id="undoBtn">Undo</button>
+        </div>
+
+        <div class="canvas-container">
+            <svg id="drawingCanvas" viewBox="0 0 500 500" preserveAspectRatio="xMidYMid meet">
+                </svg>
+        </div>
+
+        <div class="stats">
+            Circles drawn: <span id="circleCount">0</span>
+        </div>
+    </div>
+
+    <script src="exp2_3.js"></script>
+</body>
+</html>
