@@ -1,4 +1,3 @@
-// 1. Data Source
 const products = [
     { name: "Wireless Headphones", price: "$129.99", category: "electronics" },
     { name: "Cotton T-Shirt", price: "$24.99", category: "clothing" },
@@ -9,9 +8,8 @@ const products = [
 const grid = document.getElementById('productGrid');
 const filter = document.getElementById('categoryFilter');
 
-// 2. Function to display products
 function displayProducts(filteredList) {
-    grid.innerHTML = ""; // Clear current items
+    grid.innerHTML = "";
     
     filteredList.forEach(item => {
         const card = `
@@ -25,7 +23,6 @@ function displayProducts(filteredList) {
     });
 }
 
-// 3. Filter Logic
 filter.addEventListener('change', (e) => {
     const selected = e.target.value;
     
@@ -37,5 +34,5 @@ filter.addEventListener('change', (e) => {
     }
 });
 
-// Initial load
+
 displayProducts(products);
